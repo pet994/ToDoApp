@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To-Do Aplikacija</title>
+</head>
+
+<body>
+    <div id="Prijava" class="overlay">
+        <div class="overlay-forma">
+            <h2>Prijavi se</h2>
+            <form id="Forma">
+                <input type="text" id="KorisnickoIme" placeholder="Unesi ime">
+                <input type="password" id="Sifra" placeholder="Unesi sifru">
+                <p id="greska">Krivo uneseni podaci</p>
+                <button id="Prijava">Prijavi se</button>
+                <button id="Registracija">Registriraj se</button>
+            </form>
+        </div>
+    </div>
+    <div id="Aplikacija">
+        <div id="zaglavlje">
+            <h1>To-Do Aplikacija</h1>
+            <button id="Odjava">Odjavi se</button>
+        </div>
+        <div id="unos">
+            <input type="text" id="unesiZadatak" placeholder="Unesi zadatak">
+            <button id="dodaj">Dodaj Zadatak</button>
+        </div>
+        <div id="zadaci">
+            <p>Zadaci:</p>
+            <ul id="listaZadataka"></ul>
+        </div>
+    </div>
+    <div id="kolacici" class="kolacici-banner">
+        <p>Ova stranica koristi kolačiće za funkcionalnost i da omogući vam najbolje iskustvo.</p>
+        <ul>
+            <li><input id="funkcionalni-kolacici" type="checkbox" checked disabled>Funkcionalni kolacici (Obavezno)</li>
+            <li><input id="statisticki-kolacici" type="checkbox">Statistički kolačići</li>
+            <li><input id="marketinski-kolacici" type="checkbox">Marketinški kolačići</li>
+        </ul>
+        <button id="prihvati-kolacice">Prihvati</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
